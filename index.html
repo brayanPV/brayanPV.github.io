@@ -26,7 +26,7 @@
                            <a class="nav-link" href="index.html">Productos</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="index.html">Contactos</a>
+                           <a class="nav-link" href="" data-toggle="modal" data-target="#modalContacto">Contactos</a>
                        </li>
         </ul>
         <ul class="nav justify-content-center">
@@ -36,10 +36,10 @@
         </ul>
         <ul class="nav justify-content-end">
                        <li class="nav-item">
-                           <a class="nav-link" href="index.html">Iniciar Sesion</a>
+                           <a class="nav-link" href="i" data-toggle="modal" data-target="#modalLogin">Iniciar Sesion</a>
                        </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="index.html">Registrarse</a>
+                           <a class="nav-link" href="" data-toggle="modal" data-target="#modalSignUp">Registrarse</a>
                        </li>
         </ul>
         </div>
@@ -65,8 +65,9 @@
   </a>
 </div>
 </div>
+ <div class="container">
   <div class="row">
-   <div class="container">
+   
    <nav class="navbar navbar-light bg-light">
   <h2>LISTADO DE OBSEQUIOS</h2>
 </nav>
@@ -120,7 +121,153 @@
 </div>
 
 </div>
+ 
+ <div class="row">
+     
+ </div>
+ 
+ <div class="row">
+     
+ </div>
   </div>
+  
+  <!-- Modal  LOGIN-->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group" id="user-group">
+                        <input class="form-control" type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="form-group" id="contraseña-group">
+                        <input class="form-control" type="password" placeholder="Contraseña" />
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Iniciar sesion</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+   <!-- Modal  REGISTRARSE-->
+<div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Registro de clientes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group" id="user-group">
+                       <label> Nombre Completo</label>
+                        <input class="form-control" type="text" placeholder="Nombres y apellidos" />
+                    </div>
+        <div class="form-group" id="direccion-group">
+                       <label> Direccion</label>
+                        <input class="form-control" type="text" placeholder="Direccion" />
+                    </div>
+                    <div class="form-group" id="email-group">
+                       <label> Correo electronico</label>
+                        <input class="form-control" type="email" placeholder="email" />
+                    </div>
+                    <div class="form-group" id="telefono-group">
+                       <label> Numero de telefono</label>
+                        <input class="form-control" type="number" placeholder="Telefono" />
+                    </div>
+                    <div class="form-group" id="contraseña-group">
+                       <label> Contraseña</label>
+                        <input class="form-control" type="password" placeholder="Contraseña" />
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+  <!-- Modal  Contacto-->
+<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Contactenos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="form-group" id="nombre-group">
+                       <label>Nombre Completo </label>
+                        <input class="form-control" type="text" placeholder="Nombre Completo" />
+                    </div>
+       <div class="form-group" id="user-group">
+                       <label> Correo electronico</label>
+                        <input class="form-control" type="email" placeholder="Email" />
+                    </div>
+
+                    
+                    <div class="form-group" id="mensaje-group">
+                       <label> MENSAJE </label>
+                        <textarea  class="form-control" placeholder="Mensaje"> </textarea>
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Contactar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <footer class="page-footer font-small special-color-light pt-4 wow fadeIn">
+
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left">
+        <div class="row justify-content-md-center align-items-center text-center">
+				<div class="col-3">
+					<img src="https://telecafe.gov.co/wp-content/uploads/logo-gobierno_de_colombia-1024x299.png" alt="GOBIERCOL" class="img-fluid" title="GOBIERNOCOL" style="max-width: 50%">
+				</div>
+				<div class="col-3">
+					<img src="https://www.codaltec.com/sites/all/themes/bootstrap/images/logo.jpg" alt="CODALTEC" class="img-fluid" title="CODALTEC">
+					
+				</div>
+				<div class="col-2">
+					<img src="https://www.ccb.org.co/var/ccb/storage/images/ccb/clusters/cluster-de-industrias-creativas-y-contenidos/contenido-auxiliar/multimedia/imagenes-aliados/mintic_logo/147600-2-esl-CO/Mintic_Logo_large.png" alt="AliadoMinTic" class="img-fluid" title="Aliado MinTic">
+				</div>
+				<div class="col-2">
+					<img src="http://www.cccucuta.org.co/template/images/logo.png" alt="CAMARACOMERCIO" class="img-fluid" title="Camara Comercio">
+				</div>
+				<div class="col-2">
+					<img src="https://ww2.ufps.edu.co/public/archivos/elementos_corporativos/Logo-nuevo-horizontal.png" alt="UFPS" class="img-fluid" title="UFPS">
+				</div>
+			</div>
+		<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright Diseñado por <a href="mailto: brayanstivenpv@ufps.edu.co">Brayan Palomino</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
 
 
 
